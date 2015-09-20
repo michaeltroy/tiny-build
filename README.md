@@ -1,20 +1,18 @@
-#### A tiny build
+# Tiny Build Next
 
-Tired of dealing with a front-end mess for tiny websites or prototyping? Tiny Build aims to solve that problem. Tiny Build does three things:
+Tired of dealing with a front-end mess for tiny websites or prototyping? Tiny Build aims to solve that problem. Tiny Build Next:
 
-- Uses [Duo](http://duojs.org/) for package management.
-- Uses NPM to run the build.
-- Transforms JSX (React) to vanilla javascript.
+- NPM and Bower for package management.
+- NPM to run the build scrips.
+- Browserify to bundle the javascript.
+- cssnext for transpiling the css.
+- React for UI components
 
-**Tiny!**
+## Run the scripts
 
-Usage ```npm run boot```
+Boot it up ```npm run boot```
 
-##### Bonus points
-You'll need a server, I recommend [http-server](https://www.npmjs.org/package/http-server) for a lightweight easy to get-going http-server.
+Build ```npm run build```
 
-**Dev dependencies**
+Watch ```npm run watch```
 
-	- npm install -g http-server
-	- npm install -g duo
-	- npm install -g react-tools
