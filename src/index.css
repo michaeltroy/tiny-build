@@ -1,0 +1,21 @@
+@import 'responsive-grid';
+
+.rg-Unit {
+  min-height: 100px;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  padding: 24px;
+  background: gold;
+}
+
+h2 {
+  font-weight: 300;
+}
+
+.grey { background: grey; }
+.goldenrod { background: goldenrod; }
+.pink { background: pink; }
+.orange { background: orange; }
