@@ -1,13 +1,12 @@
 {
-  "name": "tiny-build-duo",
-  "version": "0.0.1",
-  "description": "A tiny build using Duo and React",
+  "name": "tiny-build-next",
+  "version": "0.0.2",
+  "description": "A React playground",
   "main": "index.js",
-  "dependencies": {
-    "react": "^0.13.3"
-  },
-  
   "devDependencies": {
+    "react": "^0.13.3",
+    "react-dom": "^0.14.0",
+    "react-mixin": "^3.0.0",
     "babelify": "^6.3.0",
     "browserify": "^11.0.1",
     "cssnext": "^1.8.3",
@@ -15,24 +14,22 @@
     "watchify": "^3.3.1",
     "normalize.css": "^3.0.3"
   },
-  
   "browserify": {
     "transform": [
       "babelify"
     ]
   },
-  
   "scripts": {
-    "wipe"       : "npm run clean && rm -rf node_modules",  
-    "clean"      : "rm -rf bower_components ../public/build",
-    "boot"       : "npm run wipe ; npm install ; npm run build",
-    "build:js"   : "browserify index.js -t babelify --standalone app -o ../public/build/index.js --extension=.es6",
-    "build:css"  : "cssnext index.css | cleancss -o ../public/build/index.css",
-    "build"      : "npm run clean && bower install && mkdir ../public/build && npm run build:js ; npm run build:css",
-    "watch:js"   : "watchify index.js --s app -o ../public/build/index.js --debug --verbose",
-    "watch:css"  : "cssnext --watch index.css ../public/build/index.css --verbose",    
-    "watch"      : "npm run build ; npm run watch:js & npm run watch:css"
+    "wipe":         "npm run clean && rm -rf node_modules",
+    "clean":        "rm -rf ../public/build",
+    "boot":         "npm run wipe ; npm install ; npm run build",
+    "boot:watch":   "npm run wipe ; npm install ; npm run watch",
+    "build:js":     "browserify index.js -t babelify --standalone app -o ../public/build/index.js --extension=.es6",
+    "build:css":    "cssnext index.css | cleancss -o ../public/build/index.css",
+    "build":        "npm run clean && mkdir ../public/build && npm run build:js ; npm run build:css",
+    "watch:js":     "watchify index.js --s app -o ../public/build/index.js --debug --verbose",
+    "watch:css":    "cssnext --watch index.css ../public/build/index.css --verbose",
+    "watch":        "npm run build ; npm run watch:js & npm run watch:css"
   },
-  
   "private": true
 }

@@ -1,7 +1,0 @@
-{
-  "name": "Remotes",
-  "description": "Remote Github components.",
-  "dependencies": {
-    "responsive-grid": "michaeltroy/responsive-grid#0.3.0"
-  }
-}
