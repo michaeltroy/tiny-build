@@ -6,3 +6,7 @@ import { browserHistory, Router, Route, Link, History } from 'react-router'
 
 import HelloWorld from './ui/hello-world'
 
+ReactDOM.render(
+  <HelloWorld />,
+  document.getElementById('content')
+);

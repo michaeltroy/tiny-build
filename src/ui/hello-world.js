@@ -1,18 +1,12 @@
 import React from 'react'
+import ReactDOM from 'react-dom'
 
-var HelloWorld = React.createClass({
-  render: function() {
+class HelloWorld extends React.Component {
+  render() {
     return (
-      <div className="HelloWorld anotherClass andAnotherClass">
-        <h2 className="rg-p2at4">+ Hello +</h2>
-      </div>
-    );
+      <h2>Hello blah </h2>
+    )
   }
-});
+}
 
-React.render(
-  <HelloWorld />,
-  document.getElementById('content')
-);
-
-module.exports = HelloWorld;
+export default HelloWorld
