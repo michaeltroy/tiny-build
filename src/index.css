@@ -1,5 +1,7 @@
+@import 'normalize.css';
+
 body {
-  font-family: 'Roboto', Helvetica, sans-serif;
+  font-family: 'Helvetica, sans-serif;
   font-size: 12px;
   padding: 24px;
   background: goldenrod;
