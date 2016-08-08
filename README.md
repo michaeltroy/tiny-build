@@ -27,3 +27,20 @@ Wipe: Deletes the build and node_modules dirs ```npm run wipe```
 
 Clean: Deletes just the build dir ```npm run clean```
 
+## Server
+
+Superstatic is a cool simple webserver that supports HTML pushState.
+
+For single page apps add a ```superstatic.json``` file to the root of your project.
+
+```
+{
+  "rewrites": [
+    {
+      "source": "**",
+      "destination": "/index.html"
+    }
+  ]
+}
+```
+
