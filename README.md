@@ -21,6 +21,8 @@ Build: Builds the project ```npm run build```
 
 Watch: Watches the project and rebuilds ```npm run watch```
 
+Start: Starts the server and watchesin seperate terminal tabs  ```npm run start```
+
 ## Clean the slate
 
 Wipe: Deletes the build and node_modules dirs ```npm run wipe```

@@ -1,5 +1,5 @@
 {
-  "name": "tiny-build",
+  "name": "prototype-type-tester",
   "version": "0.1.0",
   "description": "A good place to start",
   "main": "index.js",
@@ -10,6 +10,7 @@
     "babel-preset-stage-0": "^6.5.0",
     "browser-sync": "^2.14.0",
     "react": "^15.3.0",
+    "react-addons-css-transition-group": "^15.3.1",
     "react-dom": "^15.3.0",
     "react-router": "^2.6.1",
     "superstatic": "^4.0.3"
@@ -25,6 +26,7 @@
     "react": "^0.14.8",
     "react-addons-css-transition-group": "^15.3.0",
     "react-catalyst": "^0.3.1",
+    "ttab": "^0.3.1",
     "watchify": "^3.3.1"
   },
   "browserify": {
@@ -43,7 +45,8 @@
     "build": "npm run clean && mkdir ../public/build && npm run build:js ; npm run build:css",
     "watch:js": "watchify index.js --s app -o ../public/build/index.js --debug --verbose",
     "watch:css": "cssnext --watch index.css ../public/build/index.css --verbose",
-    "watch": "npm run build ; npm run watch:js & npm run watch:css"
+    "watch": "npm run build ; npm run watch:js & npm run watch:css",
+    "start": "ttab -G npm run watch ; superstatic -p 4000 ../public"
   },
   "private": true
 }
